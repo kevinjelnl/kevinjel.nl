@@ -1,0 +1,49 @@
+body {
+    width: 100wh;
+    height: 90vh;
+    background: -webkit-linear-gradient(45deg, #FFFFFF, #ECE9E6);
+    background: linear-gradient(45deg, #FFFFFF, #ECE9E6);
+    background-size: 400% 400%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.kjicon {
+    pointer-events: all;
+    fill: #FFA500 ;
+    stroke: #FFA500 ;
+    stroke-linejoin: square;
+    stroke-linecap: square;
+    stroke-width: 0px;
+    stroke-dasharray: 1363 5 0 ;
+    animation-name: logoAnimation;
+    animation-iteration-count: once;
+    animation-duration: 4s;
+}
+.kjtext:hover {
+    fill: #FFA500 ;
+}
+.kjicon:hover {
+    stroke: #000000;
+    animation-iteration-count: infinite;
+    animation-name: logoAnimation;
+    animation-duration: 3s;
+    stroke-dasharray: 110 0 15;
+}
+@keyframes logoAnimation {
+    0% {
+        stroke-width: 4px;
+        stroke-dashoffset: 1365;
+    }
+    25% {
+        stroke: #000000;
+    }
+    50% {
+        stroke-width: 6px;
+        fill: transparent;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-width: 4px;
+        stroke-dashoffset: 1365;
+    }
